@@ -27,6 +27,8 @@
 <nav>
     <a class="btn btn-dark" href="./pages/Catalogue.html">Catalogue</a>
     <a class="btn btn-dark" href="./pages/game.html">Détente</a>
+    <a class="btn btn-dark" href="./inscription.html">Inscription</a>
+
 
     <?php if(!isset($_SESSION["userid"])){?>
         <a id="connect-button" class="btn btn-light" href="">Connexion</a>
