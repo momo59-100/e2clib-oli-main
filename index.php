@@ -25,13 +25,13 @@
             <h1>E2C Lib - Accueil</h1>
         </div>
 <nav>
-    <a class="btn btn-dark" href="./pages/Catalogue.html">Catalogue</a>
-    <a class="btn btn-dark" href="./pages/game.html">Détente</a>
-    <a class="btn btn-dark" href="./inscription.html">Inscription</a>
+    <a class="btn btn-dark" href="./Pages/Catalogue.html">Catalogue</a>
+    <a class="btn btn-dark" href="./Pages/game.html">Détente</a>
+    <a class="btn btn-dark" href="./Pages/inscription.html">Inscription</a>
 
 
     <?php if(!isset($_SESSION["userid"])){?>
-        <a id="connect-button" class="btn btn-light" href="">Connexion</a>
+        <a id="connect-button" class="btn btn-light" href="#">Connexion</a>
     <?php }else{?>
         <p>Bonjour</p>
     <?php } ?>
