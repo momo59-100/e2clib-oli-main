@@ -1,0 +1,5 @@
+dark1 : #0b1622
+dark2 : #0d2a38
+light : #c2eef4
+
+shadow : #c2eef400 (transparence à régler)

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../Javascript/morpion.js" defer></script>
+    <script src="../Javascript/connexion.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-title">
+            <img src="../assets/icons/logoE2Clib.png" alt="Logo du site">
+            <h1>E2C Lib - Detente</h1>
+        </div>
+        <nav>
+            <a class="btn btn-dark" href="../index.php">Accueil</a>
+            <a class="btn btn-dark" href="../Pages/Catalogue.html">Catalogue</a>
+            <a class="btn btn-light" id="connect-button" href="../Javascript/connexion.js">Connexion</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="board" id="board">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <div class="annonce"></div>
+
+
+        <button id="restart" class="btn btn-light">Rejouer</button>
+    </main>
+
+    <footer>
+        <div class="foot-left">
+            <p>Site créé par la Prépa numérique de l'E2C - Grand Lille, Site d'Armentières</p>
+            <a class="btn btn-light" href="https://e2c-grandlille.fr/">Nous Contacter</a>
+        </div>
+        <div class="foot-right">
+            <div class="site">
+                <h3>Site d'Armentières</h3>
+                <p>8 rue Philippe de Girard</p>
+                <p>59 280 Armentières</p>
+                <p>03 28 52 90 50</p>
+            </div>
+            <div class="site">
+                <h3>Site de Lille</h3>
+                <p>48 rue des canonniers</p>
+                <p>59 000 Lille</p>
+                <p>03 20 63 30 80</p>
+            </div>
+            <div class="site">
+                <h3>Site de Roubaix</h3>
+                <p>45 boulevard du général Leclerc</p>
+                <p>59 100 Roubaix</p>
+                <p>03 28 07 59 80</p>
+            </div>
+            <div class="site">
+                <h3>Site de Saint-Omer</h3>
+                <p>17 rue Allent</p>
+                <p>62 500 Saint-Omer</p>
+                <p>03 28 52 90 60</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="connect-background" class="modal">
+        <div id="connect-form" class="modal-content">
+            <button type="button" class="close-button">&times;</button>
+
+            <form action="#" method="post">
+                <label for="email">Votre email :</label>
+                <input type="email" name="email" id="email" placeholder="name@tonsite.com" required>
+
+                <label for="password">Mot de passe :</label>
+                <input type="password" name="password" id="password" placeholder="********" required>
+
+                <button type="submit" class="btn btn-light">Let's Read!</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

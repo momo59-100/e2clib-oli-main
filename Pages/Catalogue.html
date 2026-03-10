@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E2C Lib - Catalogue</title>
+    <link rel="icon" href="../assets/icons/logoE2Clib.png">
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../Javascript/connexion.js" defer></script>
+    <script src="../Javascript/catalogueManager.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-title">
+            <img src="../assets/icons/logoE2Clib.png" alt="Logo du site">
+            <h1>E2C Lib - Catalogue</h1>
+        </div>
+        <nav>
+            <a class="btn btn-dark" href="../index.php">Accueil</a>
+            <a class="btn btn-dark" href="./game.html">Détente</a>
+            <a class="btn btn-light" id="connect-button" href="#">Connexion</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="catalogue-container">
+          <div class="filters-section">
+    <h2>Rechercher un livre</h2>
+
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Titre ou auteur..." class="search-input">
+        <button id="search-btn" class="btn btn-dark">🔍 Rechercher</button>
+    </div>
+
+    <div class="filters-grid">
+        <div class="filter-group">
+            <label for="filter-genre">Genre</label>
+            <select id="filter-genre">
+                <option value="">Tous les genres</option>
+                <option>Non classé</option>
+                <option>Policier</option>
+                <option>Drame</option>
+                <option>Action</option>
+                <option>Thriller</option>
+                <option>Politique</option>
+                <option>Science-fiction</option>
+                <option>Educatif</option>
+                <option>Fantasy</option>
+                <option>Bande-dessinée</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="filter-format">Format</label>
+            <select id="filter-format">
+                <option value="">Tous les formats</option>
+                <option>Poche</option>
+                <option>Roman</option>
+                <option>Bande-dessinée</option>
+                <option>Manga</option>
+                <option>Magazine</option>
+                <option>Grand Format</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="filter-language">Langue</label>
+            <select id="filter-language">
+                <option value="">Toutes les langues</option>
+                <option>Français</option>
+                <option>Anglais</option>
+                <option>Portugais</option>
+                <option>Arabe</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <button id="reset-filters">Réinitialiser</button>
+        </div>
+    </div>
+</div>
+            <div id="books-container" class="books-grid">
+                <div class="loading">📚 Chargement des livres...</div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot-left">
+            <p>Site créé par la Prépa numerique de l'E2C - Grand Lille, Site d'Armentière</p>
+            <a class="btn btn-light" href="https://e2c-grandlille.fr/">Nous Contacter</a>
+        </div>
+        <div class="foot-right">
+            <div class="site">
+                <h3>Site d'Armentières</h3>
+                <p>8 rue Philippe de Girard</p>
+                <p>59 280 Armentières</p>
+                <p>03 28 52 90 50</p>
+            </div>
+            <div class="site">
+                <h3>Site de Lille</h3>
+                <p>48 rue des canonniers</p>
+                <p>59 000 Lille</p>
+                <p>03 20 63 30 80</p>
+            </div>
+            <div class="site">
+                <h3>Site de Roubaix</h3>
+                <p>45 boulevard du général Leclerc</p>
+                <p>59 100 Roubaix</p>
+                <p>03 28 07 59 80</p>
+            </div>
+            <div class="site">
+                <h3>Site de Saint-Omer</h3>
+                <p>17 rue Allent</p>
+                <p>62 500 Saint-Omer</p>
+                <p>03 28 52 90 60</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="connect-background" class="modal">
+        <div id="connect-form" class="modal-content">
+            <button type="button" class="close-button">&times;</button>
+
+            <form action="#" method="post">
+                <label for="email">Votre email :</label>
+                <input type="email" name="email" id="email" placeholder="name@tonsite.com" required>
+
+                <label for="password">Mot de passe :</label>
+                <input type="password" name="password" id="password" placeholder="********" required>
+
+                <button type="submit" class="btn btn-light">Let's Read!</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+
+</html>
