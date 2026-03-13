@@ -46,8 +46,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <a class="btn btn-dark" href="../index.php">Accueil</a>
 <a class="btn btn-dark" href="../Pages/Catalogue.html">Catalogue</a>
 <a class="btn btn-dark" href="../Pages/game.html">Détente</a>
-<a class="btn btn-light" id="connect-button" href="../Javascript/connexion.js">Connexion</a>
-
+<a class="btn btn-light" id="connect-button" href="#">Connexion</a>
 <section class="form-container">
 
 <h2>Créer un compte</h2>
