@@ -27,7 +27,7 @@
 <nav>
     <a class="btn btn-dark" href="./Pages/Catalogue.html">Catalogue</a>
     <a class="btn btn-dark" href="./Pages/game.html">Détente</a>
-    <a class="btn btn-dark" href="./Pages/inscription.html">Inscription</a>
+    <a class="btn btn-dark" href="./Pages/inscription.php">Inscription</a>
 
 
     <?php if(!isset($_SESSION["userid"])){?>

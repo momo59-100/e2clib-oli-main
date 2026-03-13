@@ -424,3 +424,43 @@ h3 {
     background: #f0f0f0;
     border: 1px solid #ccc;
 }
+
+.form-container{
+width:400px;
+margin:60px auto;
+padding:30px;
+background:white;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.form-container h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.form-group{
+display:flex;
+flex-direction:column;
+margin-bottom:15px;
+}
+
+.form-group input{
+padding:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.btn-register{
+width:100%;
+padding:12px;
+background:#007BFF;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.btn-register:hover{
+background:#0056b3;
+}
